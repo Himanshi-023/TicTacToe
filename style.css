@@ -1,0 +1,164 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(226, 226, 226);
+}
+nav{
+    background-color:rgb(170, 133, 255);
+    color: rgb(11, 0, 0);
+    height: 4rem;
+    font-size: 1.5rem;
+    display: flex;
+
+    padding: 0 1.5rem;
+    font-family: 'Handlee', cursive;
+    font-weight: 900;
+
+}
+nav ul{
+    list-style-type: none;
+}
+
+
+.heading{
+    color: rgb(102, 16, 168);
+  text-transform: uppercase;
+font-weight: bolder;
+font-size:4vh;
+
+}
+
+.info{
+    padding-left: 1.3rem;
+    font-size: 1.4rem;
+color: rgb(3, 158, 39);
+font-weight: 600;
+
+
+}
+
+.logo{
+    height: 2.5rem;
+    width: 2.5rem;
+   margin-left: .5rem;
+  
+}
+
+
+.game-container{
+  
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.container{
+
+display: grid;
+grid-template-rows: repeat(3,10vw);
+grid-template-columns: repeat(3,10vw);
+font-family: 'Handlee', cursive;
+}
+
+.box{
+    border: 1.3px solid black;
+    font-size: 5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.box:hover{
+    background-color:rgb(219, 202, 255);
+}
+
+.gameInfo{
+
+  margin-top: 1rem;
+    padding: 0rem 3em;
+ display: flex;
+ justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.doll{
+    
+   width: 0;
+   transition: width is ease-in-out;
+}
+
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom  : 0;
+}
+
+#reset{
+padding: .2rem .7rem;
+border-radius: 2rem ;
+border-color: rgb(171, 172, 173);
+margin-left: .5rem;
+}
+
+#reset:hover{
+    background-color:rgb(219, 202, 255);
+}
+
+
+
+@media screen and (max-width :600px){
+
+
+
+    .gameInfo{
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+
+    .game-container{
+        margin-top: 3rem;
+    }
+
+    .boxtext{
+        font-size: 2.3rem;
+    }
+
+    #reset{
+padding: .1rem  .3rem ;
+font-size: .9rem;
+    }
+
+
+.container
+{
+    grid-template-rows: repeat(3,16vw);
+    grid-template-columns: repeat(3,16vw);
+}
+
+.btn
+{
+    margin-top: 1rem;
+}
+
+}
